@@ -127,7 +127,7 @@ public class SpellCollectionFlexGroup extends FlexItemGroup {
                 final boolean researched = PlayerStatistics.hasUnlockedSpell(player, spellType);
 
                 if (mode == SlimefunGuideMode.CHEAT_MODE || researched) {
-                    menu.replaceExistingItem(slot, new ItemStack(spellType.getSpell().getThemedStack()));
+                    menu.replaceExistingItem(slot, spellType.getSpell().getThemedStack().item());
                     menu.addMenuClickHandler(slot, (player1, i1, itemStack1, clickAction) -> {
                         displayDefinition(player1, profile, mode, menu, page, spellType);
                         return false;
@@ -155,7 +155,7 @@ public class SpellCollectionFlexGroup extends FlexItemGroup {
 
         clearDisplay(menu);
 
-        menu.replaceExistingItem(SPELL, spellType.getSpell().getThemedStack());
+        menu.replaceExistingItem(SPELL, spellType.getSpell().getThemedStack().item());
         menu.addMenuClickHandler(SPELL, ((player, i, itemStack, clickAction) -> false));
 
         for (int i = 0; i < RECIPE.length; i++) {
@@ -242,7 +242,7 @@ public class SpellCollectionFlexGroup extends FlexItemGroup {
             ).map(s -> ThemeType.PASSIVE.getColor() + s)
             .collect(Collectors.toList());
 
-        return new CustomItemStack(
+        return CustomItemStack.create(
             Material.CAULDRON,
             ThemeType.MAIN.getColor() + "Liquefaction Basin",
             lore
@@ -261,7 +261,7 @@ public class SpellCollectionFlexGroup extends FlexItemGroup {
         final String cooldownDivided = MessageFormat.format("{0}Cooldown {1} with stave tier", color, spellCore.isDamageMultiplied() ? "isn't reduced" : "is reduced");
 
 
-        return new CustomItemStack(
+        return CustomItemStack.create(
             Material.GLOW_BERRIES,
             ThemeType.MAIN.getColor() + "Basic Details",
             crysta,
@@ -298,7 +298,7 @@ public class SpellCollectionFlexGroup extends FlexItemGroup {
             lore.add(passive + "This spell does not heal.");
         }
 
-        return new CustomItemStack(
+        return CustomItemStack.create(
             Material.MAP,
             ThemeType.MAIN.getColor() + "Spell Values",
             lore
@@ -349,7 +349,7 @@ public class SpellCollectionFlexGroup extends FlexItemGroup {
             lore.add(projectileSpell2);
             lore.add(projectileSpell3);
         }
-        return new CustomItemStack(
+        return CustomItemStack.create(
             Material.NAME_TAG,
             ThemeType.MAIN.getColor() + "Spell Cast Type(s)",
             lore
@@ -373,7 +373,7 @@ public class SpellCollectionFlexGroup extends FlexItemGroup {
             lore.add(noRange);
         }
 
-        return new CustomItemStack(
+        return CustomItemStack.create(
             Material.TARGET,
             ThemeType.MAIN.getColor() + "Range",
             lore
@@ -397,7 +397,7 @@ public class SpellCollectionFlexGroup extends FlexItemGroup {
             lore.add(noKnockback);
         }
 
-        return new CustomItemStack(
+        return CustomItemStack.create(
             Material.SLIME_BLOCK,
             ThemeType.MAIN.getColor() + "Knockback",
             lore
@@ -427,7 +427,7 @@ public class SpellCollectionFlexGroup extends FlexItemGroup {
             lore.add(passive + "Not a projectile spell");
         }
 
-        return new CustomItemStack(
+        return CustomItemStack.create(
             Material.FIRE_CHARGE,
             ThemeType.MAIN.getColor() + "Projectile Information",
             lore
@@ -494,7 +494,7 @@ public class SpellCollectionFlexGroup extends FlexItemGroup {
             lore.add(passive + "Spell has no effects");
         }
 
-        return new CustomItemStack(
+        return CustomItemStack.create(
             Material.BREWING_STAND,
             ThemeType.MAIN.getColor() + "Effects",
             lore
@@ -511,7 +511,7 @@ public class SpellCollectionFlexGroup extends FlexItemGroup {
         lore.add(MessageFormat.format("{0}Spells Unlocked: {1}{2}", color, passive, PlayerStatistics.getSpellsUnlocked(player.getUniqueId())));
         lore.add(MessageFormat.format("{0}Rank: {1}{2}", color, spellRank.getTheme().getColor(), spellRank.getTheme().getLoreLine()));
 
-        return new CustomItemStack(
+        return CustomItemStack.create(
             Material.TARGET,
             ThemeType.MAIN.getColor() + "Spell Statistics",
             lore

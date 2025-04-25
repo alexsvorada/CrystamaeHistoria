@@ -53,7 +53,7 @@ public class FrostNova extends Spell {
         for (LivingEntity livingEntity : getTargets(castInformation, getProjectileAoe(castInformation), true)) {
             GeneralUtils.damageEntity(livingEntity, castInformation.getCaster(), getDamage(castInformation));
             livingEntity.setFreezeTicks(60);
-            ParticleUtils.displayParticleEffect(livingEntity, Particle.SNOW_SHOVEL, 1, 5);
+            ParticleUtils.displayParticleEffect(livingEntity, Particle.SNOWFLAKE, 1, 5);
         }
     }
 

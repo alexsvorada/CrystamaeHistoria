@@ -72,7 +72,7 @@ public class StarFall extends Spell {
             2F
         );
         location.getWorld().spawnParticle(
-            Particle.REDSTONE,
+            Particle.DUST,
             location,
             10,
             dustOptions

@@ -66,8 +66,8 @@ public class Mechanisms {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
                 new ItemStack(Material.COBBLED_DEEPSLATE), new ItemStack(Material.COBBLED_DEEPSLATE), new ItemStack(Material.COBBLED_DEEPSLATE),
-                SlimefunItems.CORINTHIAN_BRONZE_INGOT, new ItemStack(Material.AMETHYST_CLUSTER), SlimefunItems.CORINTHIAN_BRONZE_INGOT,
-                SlimefunItems.MAGIC_LUMP_2, SlimefunItems.MAGIC_LUMP_2, SlimefunItems.MAGIC_LUMP_2,
+                SlimefunItems.CORINTHIAN_BRONZE_INGOT.item(), new ItemStack(Material.AMETHYST_CLUSTER), SlimefunItems.CORINTHIAN_BRONZE_INGOT.item(),
+                SlimefunItems.MAGIC_LUMP_2.item(), SlimefunItems.MAGIC_LUMP_2.item(), SlimefunItems.MAGIC_LUMP_2.item(),
             },
             1
         );
@@ -79,15 +79,15 @@ public class Mechanisms {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
                 new ItemStack(Material.DEEPSLATE_BRICKS), new ItemStack(Material.DEEPSLATE_BRICKS), new ItemStack(Material.DEEPSLATE_BRICKS),
-                CrystaStacks.AMALGAMATE_INGOT_UNCOMMON, CrystaStacks.CHRONICLER_PANEL_1, CrystaStacks.AMALGAMATE_INGOT_UNCOMMON,
-                SlimefunItems.MAGIC_LUMP_3, SlimefunItems.MAGIC_LUMP_3, SlimefunItems.MAGIC_LUMP_3,
+                CrystaStacks.AMALGAMATE_INGOT_UNCOMMON.item(), CrystaStacks.CHRONICLER_PANEL_1.item(), CrystaStacks.AMALGAMATE_INGOT_UNCOMMON.item(),
+                SlimefunItems.MAGIC_LUMP_3.item(), SlimefunItems.MAGIC_LUMP_3.item(), SlimefunItems.MAGIC_LUMP_3.item(),
             },
             2
         );
 
         // Chronicler Tier 3
         RecipeItem chroniclerT3Recipe = new RecipeItem(
-            CrystaStacks.CHRONICLER_PANEL_2,
+            CrystaStacks.CHRONICLER_PANEL_2.item(),
             StoryType.ELEMENTAL, 150,
             StoryType.CELESTIAL, 200,
             StoryType.VOID, 50
@@ -102,7 +102,7 @@ public class Mechanisms {
 
         // Chronicler Tier 4
         RecipeItem chroniclerT4Recipe = new RecipeItem(
-            CrystaStacks.CHRONICLER_PANEL_3,
+            CrystaStacks.CHRONICLER_PANEL_3.item(),
             StoryType.ELEMENTAL, 1000,
             StoryType.CELESTIAL, 850,
             StoryType.VOID, 650
@@ -121,9 +121,9 @@ public class Mechanisms {
             CrystaStacks.CHRONICLER_PANEL_5,
             RecipeType.MAGIC_WORKBENCH,
             new ItemStack[]{
-                null, CrystaStacks.RUNE_DAWN, null,
-                CrystaStacks.RUNE_BEAST, CrystaStacks.CHRONICLER_PANEL_4, CrystaStacks.RUNE_EIGHTFOLD,
-                null, CrystaStacks.RUNE_NIGHT, null
+                null, CrystaStacks.RUNE_DAWN.item() , null,
+                CrystaStacks.RUNE_BEAST.item(), CrystaStacks.CHRONICLER_PANEL_4.item(), CrystaStacks.RUNE_EIGHTFOLD.item(),
+                null, CrystaStacks.RUNE_NIGHT.item(), null
             },
             5
         );
@@ -135,8 +135,8 @@ public class Mechanisms {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
                 null, new ItemStack(Material.BOOK), null,
-                SlimefunItems.CORINTHIAN_BRONZE_INGOT, new ItemStack(Material.AMETHYST_CLUSTER), SlimefunItems.CORINTHIAN_BRONZE_INGOT,
-                SlimefunItems.MAGIC_LUMP_2, SlimefunItems.COMMON_TALISMAN, SlimefunItems.MAGIC_LUMP_2,
+                SlimefunItems.CORINTHIAN_BRONZE_INGOT.item(), new ItemStack(Material.AMETHYST_CLUSTER), SlimefunItems.CORINTHIAN_BRONZE_INGOT.item(),
+                SlimefunItems.MAGIC_LUMP_2.item(), SlimefunItems.COMMON_TALISMAN.item(), SlimefunItems.MAGIC_LUMP_2.item(),
             },
             1
         );
@@ -148,15 +148,15 @@ public class Mechanisms {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
                 null, new ItemStack(Material.BOOK), null,
-                CrystaStacks.AMALGAMATE_INGOT_UNCOMMON, realisationAltar1.getItem(), CrystaStacks.AMALGAMATE_INGOT_UNCOMMON,
-                SlimefunItems.MAGIC_LUMP_3, SlimefunItems.SOULBOUND_RUNE, SlimefunItems.MAGIC_LUMP_3,
+                CrystaStacks.AMALGAMATE_INGOT_UNCOMMON.item(), realisationAltar1.getItem(), CrystaStacks.AMALGAMATE_INGOT_UNCOMMON.item(),
+                SlimefunItems.MAGIC_LUMP_3.item(), SlimefunItems.SOULBOUND_RUNE.item(), SlimefunItems.MAGIC_LUMP_3.item(),
             },
             2
         );
 
         // Realisation Tier 3
         RecipeItem realisationT3Recipe = new RecipeItem(
-            CrystaStacks.REALISATION_ALTAR_2,
+            CrystaStacks.REALISATION_ALTAR_2.item(),
             StoryType.HISTORICAL, 100,
             StoryType.HUMAN, 350,
             StoryType.PHILOSOPHICAL, 150
@@ -171,7 +171,7 @@ public class Mechanisms {
 
         // Realisation Tier 4
         RecipeItem realisationT4Recipe = new RecipeItem(
-            CrystaStacks.REALISATION_ALTAR_3,
+            CrystaStacks.REALISATION_ALTAR_3.item(),
             StoryType.HISTORICAL, 1100,
             StoryType.HUMAN, 720,
             StoryType.PHILOSOPHICAL, 450
@@ -190,9 +190,9 @@ public class Mechanisms {
             CrystaStacks.REALISATION_ALTAR_5,
             RecipeType.MAGIC_WORKBENCH,
             new ItemStack[]{
-                null, CrystaStacks.RUNE_TRUE_HOLY, null,
-                CrystaStacks.RUNE_GATE, CrystaStacks.REALISATION_ALTAR_4, CrystaStacks.RUNE_TRUE_FIRE,
-                null, CrystaStacks.RUNE_TRUE_WIND, null
+                null, CrystaStacks.RUNE_TRUE_HOLY.item(), null,
+                CrystaStacks.RUNE_GATE.item(), CrystaStacks.REALISATION_ALTAR_4.item(), CrystaStacks.RUNE_TRUE_FIRE.item(),
+                null, CrystaStacks.RUNE_TRUE_WIND.item(), null
             },
             5
         );
@@ -203,9 +203,9 @@ public class Mechanisms {
             CrystaStacks.LIQUEFACTION_BASIN_1,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
-                SlimefunItems.REINFORCED_ALLOY_INGOT, null, SlimefunItems.REINFORCED_ALLOY_INGOT,
-                SlimefunItems.REINFORCED_ALLOY_INGOT, new ItemStack(Material.CAULDRON), SlimefunItems.REINFORCED_ALLOY_INGOT,
-                SlimefunItems.REINFORCED_ALLOY_INGOT, SlimefunItems.COMMON_TALISMAN, SlimefunItems.REINFORCED_ALLOY_INGOT
+                SlimefunItems.REINFORCED_ALLOY_INGOT.item(), null, SlimefunItems.REINFORCED_ALLOY_INGOT.item(),
+                SlimefunItems.REINFORCED_ALLOY_INGOT.item(), new ItemStack(Material.CAULDRON), SlimefunItems.REINFORCED_ALLOY_INGOT.item(),
+                SlimefunItems.REINFORCED_ALLOY_INGOT.item(), SlimefunItems.COMMON_TALISMAN.item(), SlimefunItems.REINFORCED_ALLOY_INGOT.item()
             },
             500,
             Color.fromRGB(150, 150, 150)
@@ -217,9 +217,9 @@ public class Mechanisms {
             CrystaStacks.LIQUEFACTION_BASIN_2,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
-                CrystaStacks.AMALGAMATE_DUST_RARE, null, CrystaStacks.AMALGAMATE_DUST_RARE,
-                CrystaStacks.AMALGAMATE_DUST_RARE, CrystaStacks.LIQUEFACTION_BASIN_1, CrystaStacks.AMALGAMATE_DUST_RARE,
-                CrystaStacks.AMALGAMATE_DUST_RARE, SlimefunItems.ENCHANTMENT_RUNE, CrystaStacks.AMALGAMATE_DUST_RARE
+                CrystaStacks.AMALGAMATE_DUST_RARE.item(), null, CrystaStacks.AMALGAMATE_DUST_RARE.item(),
+                CrystaStacks.AMALGAMATE_DUST_RARE.item(), CrystaStacks.LIQUEFACTION_BASIN_1.item(), CrystaStacks.AMALGAMATE_DUST_RARE.item(),
+                CrystaStacks.AMALGAMATE_DUST_RARE.item(), SlimefunItems.ENCHANTMENT_RUNE.item(), CrystaStacks.AMALGAMATE_DUST_RARE.item()
             },
             1250,
             Color.fromRGB(195, 195, 150)
@@ -227,7 +227,7 @@ public class Mechanisms {
 
         // Liquefaction T3
         RecipeItem liquefactionT3Recipe = new RecipeItem(
-            CrystaStacks.LIQUEFACTION_BASIN_2,
+            CrystaStacks.LIQUEFACTION_BASIN_2.item(),
             StoryType.MECHANICAL, 90,
             StoryType.ALCHEMICAL, 250,
             StoryType.ANIMAL, 185
@@ -243,7 +243,7 @@ public class Mechanisms {
 
         // Liquefaction T4
         RecipeItem liquefactionT4Recipe = new RecipeItem(
-            CrystaStacks.LIQUEFACTION_BASIN_3,
+            CrystaStacks.LIQUEFACTION_BASIN_3.item(),
             StoryType.MECHANICAL, 750,
             StoryType.ALCHEMICAL, 700,
             StoryType.ANIMAL, 600
@@ -263,9 +263,9 @@ public class Mechanisms {
             CrystaStacks.LIQUEFACTION_BASIN_5,
             RecipeType.MAGIC_WORKBENCH,
             new ItemStack[]{
-                null, CrystaStacks.RUNE_SOVEREIGN, null,
-                CrystaStacks.RUNE_MOON, CrystaStacks.LIQUEFACTION_BASIN_4, CrystaStacks.RUNE_BLACK,
-                null, CrystaStacks.RUNE_SOUL, null
+                null, CrystaStacks.RUNE_SOVEREIGN.item(), null,
+                CrystaStacks.RUNE_MOON.item(), CrystaStacks.LIQUEFACTION_BASIN_4.item(), CrystaStacks.RUNE_BLACK.item(),
+                null, CrystaStacks.RUNE_SOUL.item(), null
             },
             10000,
             Color.fromRGB(240, 220, 200)
@@ -287,7 +287,7 @@ public class Mechanisms {
 
         // Prismatic Gilder
         RecipeItem prismaticGilderRecipe = new RecipeItem(
-            CrystaStacks.LIQUEFACTION_BASIN_3,
+            CrystaStacks.LIQUEFACTION_BASIN_3.item(),
             StoryType.MECHANICAL, 200,
             StoryType.VOID, 200,
             StoryType.CELESTIAL, 200,

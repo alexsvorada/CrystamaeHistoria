@@ -63,7 +63,7 @@ public abstract class Spell {
         );
         ItemMeta itemMeta = stack.getItemMeta();
         itemMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-        itemMeta.addItemFlags(ItemFlag.HIDE_POTION_EFFECTS);
+        itemMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
         stack.setItemMeta(itemMeta);
         return stack;
     }

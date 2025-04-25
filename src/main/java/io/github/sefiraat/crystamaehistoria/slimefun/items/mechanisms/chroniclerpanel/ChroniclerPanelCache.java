@@ -279,7 +279,7 @@ public class ChroniclerPanelCache extends AbstractCache {
         final Location location = blockMenu.getLocation();
         for (int i = 0; i < 2; i++) {
             final Location l = location.clone().add(ThreadLocalRandom.current().nextDouble(0, 1.1), 1, ThreadLocalRandom.current().nextDouble(0, 1.1));
-            location.getWorld().spawnParticle(Particle.ENCHANTMENT_TABLE, l, 0, 0.2, 0, -0.2, 0);
+            location.getWorld().spawnParticle(Particle.ENCHANT, l, 0, 0.2, 0, -0.2, 0);
         }
     }
 

@@ -25,7 +25,7 @@ public class Quake extends Spell {
             .makeDamagingSpell(2, true, 0, false)
             .makeEffectingSpell(true, false)
             .makeTickingSpell(this::onTick, 5, false, 20, false)
-            .addNegativeEffect(PotionEffectType.SLOW, 1, 60);
+            .addNegativeEffect(PotionEffectType.SLOWNESS, 1, 60);
         setSpellCore(spellCoreBuilder.build());
     }
 
@@ -47,7 +47,7 @@ public class Quake extends Spell {
             );
 
             Particle.DustOptions dustOptions = new Particle.DustOptions(Color.fromRGB(90, 100, 105), 2);
-            castLocation.getWorld().spawnParticle(Particle.REDSTONE, spawnLocation, 1, directionalXOffset, 2, directionalZOffset, dustOptions);
+            castLocation.getWorld().spawnParticle(Particle.DUST, spawnLocation, 1, directionalXOffset, 2, directionalZOffset, dustOptions);
         }
         for (Entity entity : castLocation.getWorld().getNearbyEntities(castLocation, range, 2, range)) {
             if (entity instanceof LivingEntity && entity.getUniqueId() != castInformation.getCaster()) {

@@ -27,7 +27,7 @@ public class BatteringRamGoal extends AbstractGoal<Goat> {
         double velZ = Math.abs(self.getVelocity().getZ());
 
         if (self.isOnGround() || (velX < 0.1 && velZ < 0.1)) {
-            ParticleUtils.displayParticleEffect(self, Particle.VILLAGER_ANGRY, 1, 5);
+            ParticleUtils.displayParticleEffect(self, Particle.ANGRY_VILLAGER, 1, 5);
             self.remove();
             return;
         }

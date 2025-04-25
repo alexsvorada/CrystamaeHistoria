@@ -50,7 +50,7 @@ public class Gyroscopic extends Spell {
                 Location newLocation = entity.getLocation().clone();
                 newLocation.setYaw(entity.getLocation().getYaw() + 10F);
                 entity.teleport(newLocation);
-                ParticleUtils.displayParticleEffect(entity, Particle.SPELL, 1, 1);
+                ParticleUtils.displayParticleEffect(entity, Particle.WITCH, 1, 1);
             }
         }
     }

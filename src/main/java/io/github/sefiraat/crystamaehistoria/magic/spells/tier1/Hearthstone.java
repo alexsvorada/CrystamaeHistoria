@@ -45,7 +45,7 @@ public class Hearthstone extends Spell {
         Location location = caster.getBedSpawnLocation();
         if (location == null) {
             Location casterLocation = caster.getLocation();
-            ParticleUtils.displayParticleEffect(casterLocation.add(casterLocation.getDirection()), Particle.VILLAGER_ANGRY, 1, 10);
+            ParticleUtils.displayParticleEffect(casterLocation.add(casterLocation.getDirection()), Particle.ANGRY_VILLAGER, 1, 10);
         } else {
             caster.teleportAsync(location, PlayerTeleportEvent.TeleportCause.PLUGIN);
         }

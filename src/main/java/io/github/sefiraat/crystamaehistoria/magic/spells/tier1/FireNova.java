@@ -57,7 +57,7 @@ public class FireNova extends Spell {
 
     @ParametersAreNonnullByDefault
     public void afterProjectileHit(CastInformation castInformation) {
-        ParticleUtils.displayParticleEffect(castInformation.getMainTarget(), Particle.EXPLOSION_NORMAL, 1.0, 5);
+        ParticleUtils.displayParticleEffect(castInformation.getMainTarget(), Particle.EXPLOSION, 1.0, 5);
     }
 
     @Nonnull

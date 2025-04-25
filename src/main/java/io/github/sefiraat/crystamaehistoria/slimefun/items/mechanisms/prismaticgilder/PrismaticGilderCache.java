@@ -123,7 +123,7 @@ public class PrismaticGilderCache extends AbstractCache {
                 displayItem.registerRemoval(2000);
                 PlayerStatistics.unlockStoryGilded(player.getUniqueId(), definition);
             } else {
-                ParticleUtils.displayParticleEffect(location, Particle.CRIT_MAGIC, 1, 3);
+                ParticleUtils.displayParticleEffect(location, Particle.CRIT, 1, 3);
             }
         }
     }

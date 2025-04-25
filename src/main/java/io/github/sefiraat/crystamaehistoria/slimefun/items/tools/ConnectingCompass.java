@@ -62,7 +62,7 @@ public class ConnectingCompass extends SlimefunItem {
                 if (location.getWorld().equals(pointToLocation.getWorld())) {
                     Vector vector = getVector(location, compassMeta.getLodestone());
                     ParticleUtils.drawLine(
-                        Particle.REDSTONE,
+                        Particle.DUST,
                         location,
                         location.clone().add(vector.multiply(5)),
                         0.5,

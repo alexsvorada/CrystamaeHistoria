@@ -23,10 +23,10 @@ public class TimeDilation extends Spell {
         SpellCoreBuilder spellCoreBuilder = new SpellCoreBuilder(40, true, 10, false, 25, true)
             .makeTickingSpell(this::cast, 10, true, 20, false)
             .makeEffectingSpell(true, false)
-            .addNegativeEffect(PotionEffectType.JUMP, -2, 2)
+            .addNegativeEffect(PotionEffectType.JUMP_BOOST, -2, 2)
             .addNegativeEffect(PotionEffectType.SLOW_FALLING, 2, 2)
-            .addNegativeEffect(PotionEffectType.SLOW, 2, 2)
-            .addNegativeEffect(PotionEffectType.SLOW_DIGGING, 2, 2);
+            .addNegativeEffect(PotionEffectType.SLOWNESS, 2, 2)
+            .addNegativeEffect(PotionEffectType.MINING_FATIGUE, 2, 2);
         setSpellCore(spellCoreBuilder.build());
     }
 

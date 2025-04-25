@@ -26,8 +26,8 @@ public class Ravage extends Spell {
         SpellCoreBuilder spellCoreBuilder = new SpellCoreBuilder(5, true, 0, false, 25, true)
             .makeInstantSpell(this::cast)
             .makeEffectingSpell(true, false)
-            .addPositiveEffect(PotionEffectType.DAMAGE_RESISTANCE, 1, 300)
-            .addPositiveEffect(PotionEffectType.INCREASE_DAMAGE, 1, 300)
+            .addPositiveEffect(PotionEffectType.RESISTANCE, 1, 300)
+            .addPositiveEffect(PotionEffectType.STRENGTH, 1, 300)
             .addPositiveEffect(PotionEffectType.ABSORPTION, 1, 300);
         setSpellCore(spellCoreBuilder.build());
     }
@@ -54,7 +54,7 @@ public class Ravage extends Spell {
 
     @ParametersAreNonnullByDefault
     public void onTick(MagicSummon magicSummon) {
-        ParticleUtils.displayParticleEffect(magicSummon.getMob(), Particle.VILLAGER_ANGRY, 1, 2);
+        ParticleUtils.displayParticleEffect(magicSummon.getMob(), Particle.ANGRY_VILLAGER, 1, 2);
     }
 
     @Nonnull

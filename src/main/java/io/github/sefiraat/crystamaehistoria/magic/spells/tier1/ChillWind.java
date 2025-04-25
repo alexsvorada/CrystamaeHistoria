@@ -22,8 +22,8 @@ public class ChillWind extends Spell {
         SpellCoreBuilder spellCoreBuilder = new SpellCoreBuilder(120, true, 7, false, 25, true)
             .makeTickingSpell(this::cast, 20, true, 5, false)
             .makeEffectingSpell(false, false)
-            .addNegativeEffect(PotionEffectType.SLOW, 4, 1)
-            .addNegativeEffect(PotionEffectType.SLOW_DIGGING, 4, 1);
+            .addNegativeEffect(PotionEffectType.SLOWNESS, 4, 1)
+            .addNegativeEffect(PotionEffectType.MINING_FATIGUE, 4, 1);
         setSpellCore(spellCoreBuilder.build());
     }
 

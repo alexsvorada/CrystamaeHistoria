@@ -136,12 +136,12 @@ public class Materials {
             ItemGroups.MATERIALS,
             CrystaStacks.CRYSTAL_BLANK,
             CrystaRecipeTypes.NETHER_DRAINING,
-            CrystaRecipeTypes.getDummyRecipe(CrystaStacks.CRYSTAL_BLANK)
+            CrystaRecipeTypes.getDummyRecipe(CrystaStacks.CRYSTAL_BLANK.item())
         );
 
         // Polychromatic Crystal
         RecipeItem polychromaticCrystalRecipe = new RecipeItem(
-            CrystaStacks.CRYSTAL_BLANK,
+            CrystaStacks.CRYSTAL_BLANK.item(),
             StoryType.ELEMENTAL, 10,
             StoryType.MECHANICAL, 10,
             StoryType.ALCHEMICAL, 10
@@ -156,7 +156,7 @@ public class Materials {
 
         // Kaleidoscopic Crystal
         RecipeItem kaleidoscopicCrystalRecipe = new RecipeItem(
-            CrystaStacks.CRYSTAL_BLANK,
+            CrystaStacks.CRYSTAL_BLANK.item(),
             StoryType.HISTORICAL, 10,
             StoryType.HUMAN, 10,
             StoryType.ANIMAL, 10
@@ -171,7 +171,7 @@ public class Materials {
 
         // Motley Crystal
         RecipeItem motleyCrystalRecipe = new RecipeItem(
-            CrystaStacks.CRYSTAL_BLANK,
+            CrystaStacks.CRYSTAL_BLANK.item(),
             StoryType.CELESTIAL, 10,
             StoryType.VOID, 10,
             StoryType.PHILOSOPHICAL, 10
@@ -191,7 +191,7 @@ public class Materials {
             RecipeType.MAGIC_WORKBENCH,
             new ItemStack[]{
                 null, null, null,
-                CrystaStacks.CRYSTAL_POLYCHROMATIC, CrystaStacks.CRYSTAL_KALEIDOSCOPIC, CrystaStacks.CRYSTAL_MOTLEY,
+                CrystaStacks.CRYSTAL_POLYCHROMATIC.item(), CrystaStacks.CRYSTAL_KALEIDOSCOPIC.item(), CrystaStacks.CRYSTAL_MOTLEY.item(),
                 null, null, null
             }
         );
@@ -310,7 +310,7 @@ public class Materials {
             CrystaStacks.AMALGAMATE_INGOT_COMMON,
             RecipeType.SMELTERY,
             new ItemStack[]{
-                CrystaStacks.AMALGAMATE_DUST_COMMON
+                CrystaStacks.AMALGAMATE_DUST_COMMON.item()
             }
         );
 
@@ -320,7 +320,7 @@ public class Materials {
             CrystaStacks.AMALGAMATE_INGOT_UNCOMMON,
             RecipeType.SMELTERY,
             new ItemStack[]{
-                CrystaStacks.AMALGAMATE_DUST_UNCOMMON
+                CrystaStacks.AMALGAMATE_DUST_UNCOMMON.item()
             }
         );
 
@@ -330,7 +330,7 @@ public class Materials {
             CrystaStacks.AMALGAMATE_INGOT_RARE,
             RecipeType.SMELTERY,
             new ItemStack[]{
-                CrystaStacks.AMALGAMATE_DUST_RARE
+                CrystaStacks.AMALGAMATE_DUST_RARE.item()
             }
         );
 
@@ -340,7 +340,7 @@ public class Materials {
             CrystaStacks.AMALGAMATE_INGOT_EPIC,
             RecipeType.SMELTERY,
             new ItemStack[]{
-                CrystaStacks.AMALGAMATE_DUST_EPIC
+                CrystaStacks.AMALGAMATE_DUST_EPIC.item()
             }
         );
 
@@ -350,7 +350,7 @@ public class Materials {
             CrystaStacks.AMALGAMATE_INGOT_MYTHICAL,
             RecipeType.SMELTERY,
             new ItemStack[]{
-                CrystaStacks.AMALGAMATE_DUST_MYTHICAL
+                CrystaStacks.AMALGAMATE_DUST_MYTHICAL.item()
             }
         );
 
@@ -360,7 +360,7 @@ public class Materials {
             CrystaStacks.AMALGAMATE_INGOT_UNIQUE,
             RecipeType.SMELTERY,
             new ItemStack[]{
-                CrystaStacks.AMALGAMATE_DUST_UNIQUE
+                CrystaStacks.AMALGAMATE_DUST_UNIQUE.item()
             }
         );
 
@@ -406,9 +406,9 @@ public class Materials {
             CrystaStacks.GILDED_PEARL,
             RecipeType.MAGIC_WORKBENCH,
             new ItemStack[]{
-                SlimefunItems.GILDED_IRON, SlimefunItems.GILDED_IRON, SlimefunItems.GILDED_IRON,
-                SlimefunItems.GILDED_IRON, CrystaStacks.UNCANNY_PEARL, SlimefunItems.GILDED_IRON,
-                SlimefunItems.GILDED_IRON, SlimefunItems.GILDED_IRON, SlimefunItems.GILDED_IRON
+                SlimefunItems.GILDED_IRON.item(), SlimefunItems.GILDED_IRON.item(), SlimefunItems.GILDED_IRON.item(),
+                SlimefunItems.GILDED_IRON.item(), CrystaStacks.UNCANNY_PEARL.item(), SlimefunItems.GILDED_IRON.item(),
+                SlimefunItems.GILDED_IRON.item(), SlimefunItems.GILDED_IRON.item(), SlimefunItems.GILDED_IRON.item()
             }
         );
 

@@ -18,9 +18,9 @@ public class ExaltedBeacon extends ExaltedItem {
     static {
         EFFECT_TYPES.add(PotionEffectType.SPEED);
         EFFECT_TYPES.add(PotionEffectType.ABSORPTION);
-        EFFECT_TYPES.add(PotionEffectType.FAST_DIGGING);
+        EFFECT_TYPES.add(PotionEffectType.HASTE);
         EFFECT_TYPES.add(PotionEffectType.SATURATION);
-        EFFECT_TYPES.add(PotionEffectType.DAMAGE_RESISTANCE);
+        EFFECT_TYPES.add(PotionEffectType.RESISTANCE);
         EFFECT_TYPES.add(PotionEffectType.REGENERATION);
     }
 

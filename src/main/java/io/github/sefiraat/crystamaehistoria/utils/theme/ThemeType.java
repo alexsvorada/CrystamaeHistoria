@@ -213,7 +213,7 @@ public enum ThemeType {
         }
         finalLore.add("");
         finalLore.add(applyThemeToString(ThemeType.CLICK_INFO, themeType.getLoreLine()));
-        return new CustomItemStack(
+        return CustomItemStack.create(
             material,
             ThemeType.applyThemeToString(themeType, name),
             finalLore.toArray(new String[finalLore.size() - 1])

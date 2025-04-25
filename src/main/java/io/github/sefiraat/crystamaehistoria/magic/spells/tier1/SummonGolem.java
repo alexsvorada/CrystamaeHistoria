@@ -59,7 +59,7 @@ public class SummonGolem extends Spell {
         ) {
             mob.teleport(player.getLocation());
         }
-        ParticleUtils.displayParticleEffect(magicSummon.getMob(), Particle.SLIME, 1, 3);
+        ParticleUtils.displayParticleEffect(magicSummon.getMob(), Particle.ITEM_SLIME, 1, 3);
     }
 
     @Nonnull

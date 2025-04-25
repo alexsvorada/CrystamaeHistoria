@@ -100,7 +100,7 @@ public class Uniques {
 
         // Gilding Trophy
         RecipeItem gildedTrophyRecipe = new RecipeItem(
-            CrystaStacks.RUNE_SUN,
+            CrystaStacks.RUNE_SUN.item(),
             StoryType.MECHANICAL, 100,
             StoryType.HUMAN, 100,
             StoryType.PHILOSOPHICAL, 100,
@@ -150,7 +150,7 @@ public class Uniques {
 
         // Valentines Trophy
         RecipeItem valentinesTrophyRecipe = new RecipeItem(
-            SlimefunItems.RAINBOW_WOOL_VALENTINE,
+            SlimefunItems.RAINBOW_WOOL_VALENTINE.item(),
             StoryType.HUMAN, 250,
             StoryType.ELEMENTAL, 250,
             StoryType.HISTORICAL, 250,
@@ -428,7 +428,7 @@ public class Uniques {
     }
 
     private static void spawnBirthdayFirework(@Nonnull Location location, @Nonnull Color color) {
-        final Firework firework = (Firework) location.getWorld().spawnEntity(location, EntityType.FIREWORK);
+        final Firework firework = (Firework) location.getWorld().spawnEntity(location, EntityType.FIREWORK_ROCKET);
         final FireworkMeta fireworkMeta = firework.getFireworkMeta();
         fireworkMeta.addEffect(
             FireworkEffect.builder()

@@ -407,7 +407,7 @@ public class LiquefactionBasinCache extends DisplayStandHolder {
     private void summonBoilingParticles() {
         final Location location = getLocation(true).add(0, 0.8, 0);
         location.getWorld().spawnParticle(
-            Particle.SMOKE_NORMAL,
+            Particle.SMOKE,
             location,
             0,
             0.2,
@@ -419,7 +419,7 @@ public class LiquefactionBasinCache extends DisplayStandHolder {
 
     private void summonCatalystParticles() {
         SphereEffect sphereEffect = new SphereEffect(CrystamaeHistoria.getEffectManager());
-        sphereEffect.particle = Particle.REDSTONE;
+        sphereEffect.particle = Particle.DUST;
         sphereEffect.color = org.bukkit.Color.TEAL;
         sphereEffect.setLocation(getLocation(true));
         sphereEffect.radius = 1;

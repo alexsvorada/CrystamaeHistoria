@@ -235,7 +235,7 @@ public class StoryCollectionFlexGroup extends FlexItemGroup {
         for (StoryType storyType : storyTypes) {
             lore.add(ThemeType.CLICK_INFO.getColor() + TextUtils.toTitleCase(storyType.toString()));
         }
-        return new CustomItemStack(
+        return CustomItemStack.create(
             Material.DEEPSLATE_BRICK_SLAB,
             ThemeType.MAIN.getColor() + "Chronicling Results",
             lore
@@ -244,7 +244,7 @@ public class StoryCollectionFlexGroup extends FlexItemGroup {
 
     @ParametersAreNonnullByDefault
     private ItemStack getUniqueStoryItemStack(BlockDefinition definition) {
-        return new CustomItemStack(
+        return CustomItemStack.create(
             definition.getMaterial(),
             ThemeType.MAIN.getColor() + definition.getUnique().getId(),
             definition.getUnique().getStoryLore()
@@ -287,7 +287,7 @@ public class StoryCollectionFlexGroup extends FlexItemGroup {
         lore.add(MessageFormat.format("{0}Times Chronicled: {1}{2} {3}", color, passive, timesChronicled, chronicleCap));
         lore.add(MessageFormat.format("{0}Times Realised: {1}{2} {3}", color, passive, timesRealised, realisationCap));
 
-        return new CustomItemStack(
+        return CustomItemStack.create(
             Material.TARGET,
             ThemeType.MAIN.getColor() + "Item Statistics",
             lore
@@ -304,7 +304,7 @@ public class StoryCollectionFlexGroup extends FlexItemGroup {
         lore.add(MessageFormat.format("{0}Stories Chronicled: {1}{2}", color, passive, PlayerStatistics.getStoriesUnlocked(player.getUniqueId())));
         lore.add(MessageFormat.format("{0}Rank: {1}{2}", color, storyRank.getTheme().getColor(), storyRank.getTheme().getLoreLine()));
 
-        return new CustomItemStack(
+        return CustomItemStack.create(
             Material.TARGET,
             ThemeType.MAIN.getColor() + "Story Statistics",
             lore

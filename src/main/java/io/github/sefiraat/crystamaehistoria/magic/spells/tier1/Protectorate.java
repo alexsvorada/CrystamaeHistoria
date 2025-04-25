@@ -46,7 +46,7 @@ public class Protectorate extends Spell {
         for (Entity entity : location.getWorld().getNearbyEntities(location, effectRange, effectRange, effectRange)) {
             if (entity instanceof LivingEntity) {
                 PersistentDataAPI.setLong(entity, Keys.PDC_IS_INVULNERABLE, System.currentTimeMillis() + 1050);
-                ParticleUtils.displayParticleEffect(entity, Particle.VILLAGER_HAPPY, 1, 3);
+                ParticleUtils.displayParticleEffect(entity, Particle.HAPPY_VILLAGER, 1, 3);
             }
         }
     }

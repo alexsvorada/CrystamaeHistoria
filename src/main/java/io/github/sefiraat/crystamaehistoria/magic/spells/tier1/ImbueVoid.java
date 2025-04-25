@@ -21,8 +21,8 @@ public class ImbueVoid extends Spell {
     public ImbueVoid() {
         SpellCoreBuilder spellCoreBuilder = new SpellCoreBuilder(240, false, 3, false, 30, true)
             .makeTickingSpell(this::onTick, 5, false, 40, false)
-            .addPositiveEffect(PotionEffectType.SLOW, 99, 5)
-            .addPositiveEffect(PotionEffectType.SLOW_DIGGING, 99, 5);
+            .addPositiveEffect(PotionEffectType.SLOWNESS, 99, 5)
+            .addPositiveEffect(PotionEffectType.MINING_FATIGUE, 99, 5);
         setSpellCore(spellCoreBuilder.build());
 
     }

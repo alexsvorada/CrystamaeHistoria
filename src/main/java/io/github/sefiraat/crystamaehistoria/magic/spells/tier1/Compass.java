@@ -39,7 +39,7 @@ public class Compass extends Spell {
             if (foundBlock == null) {
                 ParticleUtils.displayParticleEffect(
                     location.add(location.getDirection()),
-                    Particle.VILLAGER_ANGRY,
+                    Particle.ANGRY_VILLAGER,
                     1,
                     10
                 );

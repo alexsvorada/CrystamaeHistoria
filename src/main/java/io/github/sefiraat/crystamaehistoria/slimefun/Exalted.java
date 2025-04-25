@@ -54,7 +54,7 @@ public class Exalted {
 
         // Exaltation Beacon
         RecipeItem exaltedBeaconRecipe = new RecipeItem(
-            CrystaStacks.AMALGAMATE_INGOT_MYTHICAL,
+            CrystaStacks.AMALGAMATE_INGOT_MYTHICAL.item(),
             StoryType.ELEMENTAL, 250,
             StoryType.HUMAN, 250,
             StoryType.PHILOSOPHICAL, 250,
@@ -74,16 +74,16 @@ public class Exalted {
             CrystaStacks.EXALTED_BAELFIRE,
             RecipeType.MAGIC_WORKBENCH,
             new ItemStack[]{
-                null, CrystaStacks.RUNE_BEAST, null,
-                CrystaStacks.RUNE_TRUE_EARTH, CrystaStacks.EXALTED_BEACON, CrystaStacks.RUNE_TRUE_WATER,
-                null, CrystaStacks.RUNE_BLINKING, null
+                null, CrystaStacks.RUNE_BEAST.item(), null,
+                CrystaStacks.RUNE_TRUE_EARTH.item(), CrystaStacks.EXALTED_BEACON.item(), CrystaStacks.RUNE_TRUE_WATER.item(),
+                null, CrystaStacks.RUNE_BLINKING.item(), null
             },
             3
         );
 
         // Fertility Pharo
         RecipeItem exaltedFertilityPharoRecipe = new RecipeItem(
-            CrystaStacks.AMALGAMATE_INGOT_MYTHICAL,
+            CrystaStacks.AMALGAMATE_INGOT_MYTHICAL.item(),
             StoryType.ELEMENTAL, 350,
             StoryType.ANIMAL, 350,
             StoryType.CELESTIAL, 350,
@@ -103,16 +103,16 @@ public class Exalted {
             CrystaStacks.EXALTED_FERTILITY_TOTEM,
             CrystaRecipeTypes.LIQUEFACTION_CRAFTING,
             new ItemStack[]{
-                null, CrystaStacks.RUNE_MOON, null,
-                CrystaStacks.RUNE_BLACK, CrystaStacks.EXALTED_FERTILITY_PHARO, CrystaStacks.RUNE_DAWN,
-                null, CrystaStacks.RUNE_PUNISHMENT, null
+                null, CrystaStacks.RUNE_MOON.item(), null,
+                CrystaStacks.RUNE_BLACK.item(), CrystaStacks.EXALTED_FERTILITY_PHARO.item(), CrystaStacks.RUNE_DAWN.item(),
+                null, CrystaStacks.RUNE_PUNISHMENT.item(), null
             },
             13
         );
 
         // Exalted Harvester
         RecipeItem exaltedHarvesterRecipe = new RecipeItem(
-            CrystaStacks.AMALGAMATE_INGOT_MYTHICAL,
+            CrystaStacks.AMALGAMATE_INGOT_MYTHICAL.item(),
             StoryType.ELEMENTAL, 350,
             StoryType.HISTORICAL, 350,
             StoryType.VOID, 350,
@@ -132,16 +132,16 @@ public class Exalted {
             CrystaStacks.EXALTED_AGRONOMIST,
             CrystaRecipeTypes.LIQUEFACTION_CRAFTING,
             new ItemStack[]{
-                null, CrystaStacks.RUNE_CHANGE, null,
-                CrystaStacks.RUNE_DRAGON, CrystaStacks.EXALTED_HARVESTER, CrystaStacks.RUNE_TRUE_FIRE,
-                null, CrystaStacks.RUNE_BLACK_SWORD, null
+                null, CrystaStacks.RUNE_CHANGE.item(), null,
+                CrystaStacks.RUNE_DRAGON.item(), CrystaStacks.EXALTED_HARVESTER.item(), CrystaStacks.RUNE_TRUE_FIRE.item(),
+                null, CrystaStacks.RUNE_BLACK_SWORD.item(), null
             },
             9
         );
 
         // Exalted Dawn
         RecipeItem exaltedDawnRecipe = new RecipeItem(
-            CrystaStacks.AMALGAMATE_DUST_MYTHICAL,
+            CrystaStacks.AMALGAMATE_DUST_MYTHICAL.item(),
             StoryType.ELEMENTAL, 250,
             StoryType.HISTORICAL, 250,
             StoryType.CELESTIAL, 250,
@@ -157,7 +157,7 @@ public class Exalted {
 
         // Exalted Dusk
         RecipeItem exaltedDuskRecipe = new RecipeItem(
-            CrystaStacks.AMALGAMATE_DUST_MYTHICAL,
+            CrystaStacks.AMALGAMATE_DUST_MYTHICAL.item(),
             StoryType.ELEMENTAL, 250,
             StoryType.HISTORICAL, 250,
             StoryType.VOID, 250,
@@ -173,7 +173,7 @@ public class Exalted {
 
         // Exalted Sun
         RecipeItem exaltedSunRecipe = new RecipeItem(
-            CrystaStacks.AMALGAMATE_DUST_MYTHICAL,
+            CrystaStacks.AMALGAMATE_DUST_MYTHICAL.item(),
             StoryType.ELEMENTAL, 250,
             StoryType.ALCHEMICAL, 250,
             StoryType.CELESTIAL, 250,
@@ -189,7 +189,7 @@ public class Exalted {
 
         // Exalted Storm
         RecipeItem exaltedStormRecipe = new RecipeItem(
-            CrystaStacks.AMALGAMATE_DUST_MYTHICAL,
+            CrystaStacks.AMALGAMATE_DUST_MYTHICAL.item(),
             StoryType.ELEMENTAL, 250,
             StoryType.ALCHEMICAL, 250,
             StoryType.VOID, 250,

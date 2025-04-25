@@ -41,7 +41,7 @@ public class Shroud extends Spell {
                 final Interaction interaction = livingEntity instanceof Player ? Interaction.ATTACK_PLAYER : Interaction.ATTACK_ENTITY;
                 if (GeneralUtils.hasPermission(castInformation.getCaster(), entity.getLocation(), interaction)) {
                     applyNegativeEffects(livingEntity, castInformation);
-                    ParticleUtils.displayParticleEffect(livingEntity, Particle.SLIME, 2, 2);
+                    ParticleUtils.displayParticleEffect(livingEntity, Particle.ITEM_SLIME, 2, 2);
                 }
             }
         }

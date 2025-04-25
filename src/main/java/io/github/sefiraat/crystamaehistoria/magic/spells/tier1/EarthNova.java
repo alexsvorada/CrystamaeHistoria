@@ -25,7 +25,7 @@ public class EarthNova extends Spell {
         SpellCoreBuilder spellCoreBuilder = new SpellCoreBuilder(20, true, 10, false, 10, false)
             .makeDamagingSpell(2, true, 1, false)
             .makeEffectingSpell(false, true)
-            .addNegativeEffect(PotionEffectType.SLOW, 20, 2)
+            .addNegativeEffect(PotionEffectType.SLOWNESS, 20, 2)
             .makeProjectileSpell(this::fireProjectiles, 2, false, 1, false)
             .makeProjectileVsEntitySpell(this::projectileHit);
         setSpellCore(spellCoreBuilder.build());

@@ -31,12 +31,11 @@ public interface MagicPaintbrush {
         PotionMeta potionMeta = (PotionMeta) itemStack.getItemMeta();
         potionMeta.setColor(dyeColor.getColor());
         if (enchanted) {
-            potionMeta.addEnchant(Enchantment.LUCK, 1, true);
+            potionMeta.addEnchant(Enchantment.LUCK_OF_THE_SEA, 1, true);
         }
         potionMeta.addItemFlags(
             ItemFlag.HIDE_ENCHANTS,
-            ItemFlag.HIDE_ATTRIBUTES,
-            ItemFlag.HIDE_POTION_EFFECTS
+            ItemFlag.HIDE_ATTRIBUTES
         );
         itemStack.setItemMeta(potionMeta);
         return itemStack;

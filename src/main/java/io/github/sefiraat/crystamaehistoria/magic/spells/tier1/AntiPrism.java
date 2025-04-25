@@ -33,12 +33,12 @@ public class AntiPrism extends Spell {
             .makeEffectingSpell(true, true)
             .addNegativeEffect(PotionEffectType.BAD_OMEN, 1, 30)
             .addNegativeEffect(PotionEffectType.BLINDNESS, 1, 30)
-            .addNegativeEffect(PotionEffectType.CONFUSION, 1, 30)
-            .addNegativeEffect(PotionEffectType.HARM, 1, 30)
+            .addNegativeEffect(PotionEffectType.NAUSEA, 1, 30)
+            .addNegativeEffect(PotionEffectType.INSTANT_DAMAGE, 1, 30)
             .addNegativeEffect(PotionEffectType.HUNGER, 1, 30)
             .addNegativeEffect(PotionEffectType.POISON, 1, 30)
-            .addNegativeEffect(PotionEffectType.SLOW, 1, 30)
-            .addNegativeEffect(PotionEffectType.SLOW_DIGGING, 1, 30)
+            .addNegativeEffect(PotionEffectType.SLOWNESS, 1, 30)
+            .addNegativeEffect(PotionEffectType.MINING_FATIGUE, 1, 30)
             .addNegativeEffect(PotionEffectType.UNLUCK, 1, 30)
             .addNegativeEffect(PotionEffectType.WEAKNESS, 1, 30)
             .addNegativeEffect(PotionEffectType.WITHER, 1, 30);
@@ -49,7 +49,7 @@ public class AntiPrism extends Spell {
     public void cast(CastInformation castInformation) {
         Location location = castInformation.getCastLocation();
         Location aimLocation = location.clone().add(0, 1.5, 0).add(location.getDirection().multiply(2));
-        MagicProjectile magicProjectile = SpellUtils.summonMagicProjectile(castInformation, EntityType.SPLASH_POTION, aimLocation);
+        MagicProjectile magicProjectile = SpellUtils.summonMagicProjectile(castInformation, EntityType.POTION, aimLocation);
         magicProjectile.setVelocity(location.getDirection(), 0.5);
     }
 

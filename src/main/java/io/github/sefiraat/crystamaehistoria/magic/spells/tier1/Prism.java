@@ -24,14 +24,14 @@ public class Prism extends Spell {
             .makeEffectingSpell(true, true)
             .addPositiveEffect(PotionEffectType.ABSORPTION, 1, 30)
             .addPositiveEffect(PotionEffectType.CONDUIT_POWER, 1, 30)
-            .addPositiveEffect(PotionEffectType.DAMAGE_RESISTANCE, 1, 30)
+            .addPositiveEffect(PotionEffectType.RESISTANCE, 1, 30)
             .addPositiveEffect(PotionEffectType.DOLPHINS_GRACE, 1, 30)
-            .addPositiveEffect(PotionEffectType.FAST_DIGGING, 1, 30)
+            .addPositiveEffect(PotionEffectType.HASTE, 1, 30)
             .addPositiveEffect(PotionEffectType.HEALTH_BOOST, 1, 30)
             .addPositiveEffect(PotionEffectType.HERO_OF_THE_VILLAGE, 1, 30)
-            .addPositiveEffect(PotionEffectType.INCREASE_DAMAGE, 1, 30)
+            .addPositiveEffect(PotionEffectType.STRENGTH, 1, 30)
             .addPositiveEffect(PotionEffectType.INVISIBILITY, 1, 30)
-            .addPositiveEffect(PotionEffectType.JUMP, 1, 30)
+            .addPositiveEffect(PotionEffectType.JUMP_BOOST, 1, 30)
             .addPositiveEffect(PotionEffectType.LUCK, 1, 30)
             .addPositiveEffect(PotionEffectType.NIGHT_VISION, 1, 30)
             .addPositiveEffect(PotionEffectType.REGENERATION, 1, 30)
@@ -49,7 +49,7 @@ public class Prism extends Spell {
         }
         PersistentDataAPI.setBoolean(player, Keys.newKey("PRISM"), true);
         applyPositiveEffects(player, castInformation);
-        ParticleUtils.displayParticleEffect(player, Particle.SPELL, 2, 20);
+        ParticleUtils.displayParticleEffect(player, Particle.WITCH, 2, 20);
     }
 
     @Nonnull

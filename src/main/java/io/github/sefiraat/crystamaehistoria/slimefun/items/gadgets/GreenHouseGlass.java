@@ -84,7 +84,7 @@ public class GreenHouseGlass extends TickingBlockNoGui {
             Ageable ageable = (Ageable) blockData;
             if (ageable.getAge() < ageable.getMaximumAge()) {
                 ageable.setAge(ageable.getAge() + 1);
-                ParticleUtils.displayParticleEffect(testBlock.getLocation().add(.5, .5, .5), Particle.SPELL_WITCH, 0.5, 2);
+                ParticleUtils.displayParticleEffect(testBlock.getLocation().add(.5, .5, .5), Particle.WITCH, 0.5, 2);
                 testBlock.setBlockData(ageable);
             }
         }
